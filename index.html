@@ -6,13 +6,13 @@
     <title>my first project</title>
     <style>
         .box{
-            width: 500px;
-            height: 500px;
+            width: 100px;
+            height: 100px;
             background-color: blueviolet;
-            margin:200px  auto;
+            margin:200px  100px;
             animation-name: myfirst;
             animation-duration: 1s;
-            animation-timing-function: linear;
+            animation-timing-function: ease-in;
             animation-iteration-count: infinite;
 
         }
@@ -25,11 +25,86 @@
                 transform: rotateZ(360deg);
             }
         }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin:200px  auto;
+            animation-name: mysecond;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite
+
+        }
+        @keyframes mysecond{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+
+                transform: translateX(800px);
+            }
+        }
+    
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: magenta;
+            margin:200px  auto;
+            animation-name: mythird;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes mythird{
+            0%{
+                transform: tralateX(0px);
+            }
+            25%{
+                background-color: brown;
+            }
+            50%{
+                background-color: mediumturquoise;
+            }
+            75%{
+                background-color: magenta;
+            }
+            100%{
+
+                transform: translateX(1300px);
+            }
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin:200px  auto;
+            animation-name: myfourth;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+
+
+        }
+        @keyframes myfourth{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+
+                transform: rotateZ(360deg);
+            }
+        }
+    
 
     </style>
 </head>
 <body>
     <div class="box"> </div>
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <div class="box3"> </div>
     
 </body>
 </html>
